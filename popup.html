@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RegexQuery</title>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>RegexQuery</h1>
+  <label for="regex-input">Regular Expression:</label>
+  <input type="text" id="regex-input">
+  <select id="presets">
+    <option value="">Select a preset regex...</option>
+    <option value="\b1\d{10}\b">Phone Number</option>
+    <option value="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b">Email Address</option>
+  </select>
+  <button id="search-btn">Search</button>
+  <button id="copy-btn" disabled>Copy to Clipboard</button>
+</body>
+</html>
